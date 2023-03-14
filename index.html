@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" id="root" color-scheme="light">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="./images/siteicon.jpg" type="image/x-siteicon">
+     <title>Superhero Hunter</title>
+
+     <!-- Google fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,600;0,900;1,100;1,200;1,300;1,800&display=swap"
+          rel="stylesheet">
+
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- Custom Stylesheet -->
+     <link rel="stylesheet" href="./css/style.css">
+
+     <!-- Crypto JS -->
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+          integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="flex-col">
+
+     <!-- Navbar -->
+     <nav class="flex-row navbar">
+          <!-- Site Icon and Name -->
+          <div class="flex-row navbar-brand">
+               <img class="logo" src="./images/huntlogo.png" alt="">
+               <a href="./index.html">
+                    <span>SuperHero Hunter</span>
+               </a>
+          </div>
+          <!--  Favourites Button -->
+          <div class="flex-row favi-btn">
+              
+               <a class="flex-row link-to-different-page" href="./fav.html">
+                    <button class="btn fav-btn"> <i class="fa-solid fa-heart fav-icon"></i> &nbsp; Favourites</button>
+               </a>
+          </div>
+     </nav>
+
+     <!-- Search Bar and Search Results -->
+     <div class="flex-col searchBar-items">
+          <div class="search-bar-container" class="flex-row">
+               <div class="search-icon-container" style=""><i class="fa-solid fa-magnifying-glass"></i></div>
+               <input id="search-bar" type="text" autocomplete="off" placeholder="Hunt for Superheros">
+          </div>
+          <ul class="flex-col" id="search-results">
+             
+          </ul>
+     </div>
+
+     <!-- Toasts for notifying user that character is added or removed from favourites -->
+     <span data-visiblity="hide" class="fav-toast">Added to Favourites</span>
+     <span data-visiblity="hide" class="remove-toast">Removed from Favourites</span>
+
+     <!-- Background image -->
+     <img class="bg-img" src="./images/herobg.png" alt="">
+
+     <!-- External Script file -->
+     <script src="./js/script.js"></script>
+
+</body>
+
+</html>
+
+
+
